@@ -17,12 +17,11 @@ public abstract class Figur {
     protected int positionY;
     protected Color färg;
     
-    
     public Figur( int x, int y){
         
         positionX = x;
         positionY = y;
-         int R = (int) (Math.random() * 256);
+        int R = (int) (Math.random() * 256);
         int G = (int) (Math.random() * 256);
         int B = (int) (Math.random() * 256); 
         färg = new Color(R, G, B);

@@ -31,11 +31,16 @@ public class Triangel extends Figur {
     @Override
     public double räknaArea(){
        return (höjd*bass)/2;
-        
     }
 
     @Override
     public void rita(Graphics g) {
+        int [] random = new int [100];
+        for (i = 0; i > random.length; i++)
+        random [i] = (int)(Math.random() * 100);
+        
+        int [] yPoints = {höjd -random[i], höjd - random[i], höjd};//test)byt variabel senare)
+        int [] xPoints = {bass - random[i], bass + random[i], bass};
         g.setColor(färg);
         g.fillPolygon(xPoints, yPoints, 3);
     }
