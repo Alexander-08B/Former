@@ -35,12 +35,9 @@ public class Triangel extends Figur {
 
     @Override
     public void rita(Graphics g) {
-        int [] random = new int [100];
-        for (i = 0; i > random.length; i++)
-        random [i] = (int)(Math.random() * 100);
-        
-        int [] yPoints = {höjd -random[i], höjd - random[i], höjd};//test)byt variabel senare)
-        int [] xPoints = {bass - random[i], bass + random[i], bass};
+
+        int [] yPoints = {super.positionY, super.positionY + höjd, super.positionY};
+        int [] xPoints = {super.positionX, super.positionX + bass / 2, super.positionX + bass};
         g.setColor(färg);
         g.fillPolygon(xPoints, yPoints, 3);
     }
